@@ -33,7 +33,6 @@ stations=("9C" "25" "89")
 for FOLDERNAME in Data
 do
 	cd "$FOLDERNAME"
-	cd "$1"
 
 	if [ ! -d 'processed_dataset' ]
 	then
@@ -82,13 +81,10 @@ do
 			mkdir 'processed_dataset/'$str'/vtilde_matrices'
 		fi
 
-		
 		if [ ! -d 'processed_dataset/'$str'/FeedBack_Pcap' ]
 		then
 			mkdir 'processed_dataset/'$str'/FeedBack_Pcap'
 		fi
-
-
 
 
 
@@ -141,207 +137,6 @@ do
 		fi
 
 
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/E' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/E'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/E_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/E_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/F' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/F'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/F_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/F_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/G' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/G'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/G_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/G_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/H' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/H'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/H_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/H_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/I' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/I'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/I_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/I_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/J' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/J'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/J_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/J_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/K' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/K'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/K_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/K_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/L' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/L'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/L_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/L_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/M' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/M'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/M_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/M_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/N' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/N'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/N_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/N_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/O' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/O'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/O_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/O_batch'
-		fi
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/P' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/P'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/P_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/P_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/Q' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/Q'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/Q_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/Q_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/R' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/R'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/R_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/R_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/S' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/S'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/S_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/S_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/T' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/T'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/T_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/T_batch'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/U' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/U'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/U_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/U_batch'
-		fi
 
 
 	done
