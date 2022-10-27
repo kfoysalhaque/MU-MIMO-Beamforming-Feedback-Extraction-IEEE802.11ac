@@ -75,6 +75,6 @@ The script will extract the beamforming angles, exclusive beamforming report, ti
 #### For example: For STA_9C (last two dgits of the mac is 9C), beamforming angles, exclusive beamforming report, time vector and vtilde matrices are extracted and saved in beamf_angles, exclusive_beamf_report, time_vector, and vtilde_matrices respectively within the directory '9C' as shown below:
 
 <img src="directory.png"
-     alt="Markdown Monster icon" width="300" height="700"
+     alt="Markdown Monster icon" width="350" height="600"
      style="float: center;" />
 
