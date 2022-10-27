@@ -36,7 +36,7 @@ For parsing the BFI, at first we need to separate the BFI of three different STA
 
 #### Please replace the MAC address of the STA_1, STA_2 and STA_3 as per your NIC information. For our case they are     "CC:40:D0:57:EA:89", "B0:B9:8A:63:55:9C" and "38:94:ED:12:3C:25" for STA_1, STA_2 and STA_3 respectively. For each of the STAs we create directories with last two digits of their MAC address (this is just for ease of naming ) which is handled by Feedback_split_stations.sh script. 
 
-Now that the BFI of each of the STAs are separated out and put in the directory : 'MU-MIMO_Beamforming_Feedback_Extraction/MU-MIMO_Sample_Data/processed_dataset/xx/FeedBack_Pcap/', we move forward to the extraction process with matlab. <br> <br>
+Now that the BFI of each of the STAs are separated out and put in the directory : 'MU-MIMO_Beamforming_Feedback_Extraction/MU-MIMO_Sample_Data/processed_dataset/xx/FeedBack_Pcap/', we move forward to the extraction process with matlab. <br />
 
 **(i)** At first, we have to investigate the hex values of the pcap capture of any STA. One file from each configuration would be sufficient. This is needed as there are some redundant bytes which are captured in the wireshark with every BFI packets and we want to skip those bytes. We are naming them skip_byte_per_BFI and skip_byte_per_capture. If the considered capture has n BFI packets then it is structured as:
 
