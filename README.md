@@ -50,32 +50,42 @@ Now that the BFI of each of the STAs are separated out and put in the directory 
 
 **(ii)**  Open the pcap file with wireshark and note down the starting of the capture. For the file 'E_01_C_01_c1_n_1_AP_3x3_9C.pcapng', it is '00 00 40' which is the actual starting byte of the captures.
 
+<br />
+
 **(iii)** Now read the same file with predefined "read_hex('xxxxx.pcap')" function which you can find in the Matlab_Code directory of the repo. You will find that, for the BFI_1, the string: '00 00 40' starts at 289th sequence. 
+
+<br />
 ```
 pcap_hex = read_hex('../MU-MIMO_Sample_Data/processed_dataset/9C/FeedBack_Pcap/E_01_C_01_c1_n_1_AP_3x3_9C.pcapng')
 ```
-
 Thus, 288 = skip_byte_per_capture + skip_byte_per_BFI 
 
+<br />
+
 **(iv)** From the wireshark find the ending bytes for BFI_1, which is '20 22 ec' for the considered capture. and also we node down the captured bytes for BFI_1 which is 1095. 
+ 
+ <br />
  
 **(v)** Thus we should find the ending bytes: '20 22 ec' at the sequence number 288+1095= 1383 (IN MATLAB). 
  
  Now look for the starting of the BFI_2 (look for bytes '00 00 40') in 'pcap_hex'., It should be sequence 1417.
  
+ <br />
  ```
  Thus, skip_byte_per_BFI= 1417 - (1383 +1)  = 33 and 
  skip_byte_per_capture = (288 - skip_byte_per_BFI) = 255
 ```
+<br />
 
 #### It is to mention that, both skip_byte_per_capture and skip_byte_per_BFI varies depending on the antenna and spatial stream configuration and capturing software version and OS. Thus it is better to check the at least one file from each configuration before parsing. 
 
+<br />
 For our antenna and spatial stream configuration of each of the STAs and AP, we get 2 phi and 2 psi angle in each subcarrier for each of the STAs. The number of phi and psi angles will be different depending on the defined standard which you can find [here](https://standards.ieee.org/ieee/802.11ac/4473/). 
 
 
-After we change the *skip_byte_per_capture and skip_byte_per_BFI* field according to our config we can extract the BFI by executing 'Extract_BFI.m'.
+After we change the *skip_byte_per_capture and skip_byte_per_BFI* field according to our config we can extract the BFI by executing 'Extract_BFI.m'. The script will extract the beamforming angles, exclusive beamforming report, time vector and vtilde matrices for each of captured BFI packets of all the STAs of the considered MU-MIMO system. 
 
-The script will extract the beamforming angles, exclusive beamforming report, time vector and vtilde matrices for each of captured BFI packets of all the STAs of the considered MU-MIMO system. 
+<br />
 
 #### For example: For STA_25 (last two dgits of the mac is 25), beamforming angles, exclusive beamforming report, time vector and vtilde matrices are extracted and saved in beamf_angles, exclusive_beamf_report, time_vector, and vtilde_matrices respectively within the directory '25' as shown below:
 
