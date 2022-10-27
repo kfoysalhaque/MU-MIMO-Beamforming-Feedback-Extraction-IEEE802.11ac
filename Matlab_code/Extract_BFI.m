@@ -22,7 +22,7 @@ clear all
 %% Extraction Configuration 
 
 station= ["9C", "25", "89"];
-n = 1000000;   %%max num of UDPs
+n = 1000;   %%max num of UDPs
 
 %% configuration
 user_names = ['25', '9C', '89'];
