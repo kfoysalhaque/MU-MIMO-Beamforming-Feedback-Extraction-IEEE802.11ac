@@ -28,9 +28,7 @@ com
 stations=("9C" "25" "89")
 
 
-
-
-for FOLDERNAME in Data
+for FOLDERNAME in MU-MIMO_Sample_Data
 do
 	cd "$FOLDERNAME"
 
@@ -85,36 +83,6 @@ do
 		then
 			mkdir 'processed_dataset/'$str'/FeedBack_Pcap'
 		fi
-
-
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/01' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/01'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/02' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/02'
-		fi
-
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/03' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/03'
-		fi
-
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/04' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/04'
-		fi
-
 
 	done
 

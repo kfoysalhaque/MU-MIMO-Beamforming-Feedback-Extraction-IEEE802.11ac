@@ -14,6 +14,8 @@
 % GNU General Public License for more details.
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 clc
 clear all
 
@@ -77,11 +79,11 @@ for s=1:length(station)
         for file_idx = 1:numel(files)
             FILE = strcat(folder_name, files(file_idx).name); % capture file
             user_name = files(file_idx).name(end-8:end-7);
-            if user_name == station(1:2)
+            if user_name == user_names(1:2)
                 index_user = 1;
-            elseif user_name == station(3:4)
+            elseif user_name == user_names(3:4)
                 index_user = 2;
-            elseif user_name == station(5:6)
+            elseif user_name == user_names(5:6)
                 index_user = 3;
             end
 
