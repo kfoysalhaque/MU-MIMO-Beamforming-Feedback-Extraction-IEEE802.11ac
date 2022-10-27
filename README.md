@@ -78,4 +78,3 @@ The script will extract the beamforming angles, exclusive beamforming report, ti
      alt="Markdown Monster icon" width="350" height="600"
      style="float: center;" />
 
-{\color{red}Welcome}
