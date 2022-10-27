@@ -72,6 +72,9 @@ After we change the *skip_byte_per_capture and skip_byte_per_BFI* field accordin
 
 The script will extract the beamforming angles, exclusive beamforming report, time vector and vtilde matrices for each of captured BFI packets of all the STAs of the considered MU-MIMO system. 
 
-#### For example: For STA_9C (last two dgits of the mac is 9C), beamforming angles, exclusive beamforming report, time vector and vtilde matrices are extracted and saved in beamf_angles, exclusive_beamf_report, time_vector, and vtilde_matrices respectively within the directory '9C'
+#### For example: For STA_9C (last two dgits of the mac is 9C), beamforming angles, exclusive beamforming report, time vector and vtilde matrices are extracted and saved in beamf_angles, exclusive_beamf_report, time_vector, and vtilde_matrices respectively within the directory '9C' as shown below:
 
+<img src="directory.png"
+     alt="Markdown Monster icon" width="300" height="700"
+     style="float: center;" />
 
