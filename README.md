@@ -73,10 +73,12 @@ Thus, 288 = skip_byte_per_capture + skip_byte_per_BFI
  Now look for the starting of the BFI_2 (look for bytes '00 00 40') in 'pcap_hex'., It should be sequence 1417.
  
  <br />
- ```
+ 
+```
  Thus, skip_byte_per_BFI= 1417 - (1383 +1)  = 33 and 
  skip_byte_per_capture = (288 - skip_byte_per_BFI) = 255
 ```
+
 <br />
 
 #### It is to mention that, both skip_byte_per_capture and skip_byte_per_BFI varies depending on the antenna and spatial stream configuration and capturing software version and OS. Thus it is better to check the at least one file from each configuration before parsing. 
