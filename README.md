@@ -89,7 +89,7 @@ For our antenna and spatial stream configuration of each of the STAs and AP, we 
 <br />
 <br />
 
-After we change the *skip_byte_per_capture and skip_byte_per_BFI* field according to our config we can extract the BFI by executing 'Extract_BFI.m'. The script will extract the beamforming angles, exclusive beamforming report, time vector and vtilde matrices for each of captured BFI packets of all the STAs of the considered MU-MIMO system. 
+After we change the *skip_byte_per_capture and skip_byte_per_BFI* field according to our config we can extract the BFI by executing 'Extract_BFI.m'. The script will extract the beamforming angles, exclusive beamforming report, time vector and vtilde matrices for each of the captured BFI packets of all the STAs of the considered MU-MIMO system. 
 
 
 #### For example: For STA_25 (last two dgits of the mac is 25), beamforming angles, exclusive beamforming report, time vector and vtilde matrices are extracted and saved in beamf_angles, exclusive_beamf_report, time_vector, and vtilde_matrices respectively within the directory '25' as shown below:
