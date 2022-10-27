@@ -49,7 +49,7 @@ Now that the BFI of each of the STAs are separated out and put in the directory 
 
 **(iii)** Now read the same file with predefined "read_hex('xxxxx.pcap')" function which you can find in the Matlab_Code directory of the repo. You will find that, for the BFI_1, the string: '00 00 40' starts at 289th sequence. 
 ```
-pcap_hex = read_hex('../MU-MIMO_Sample_Data/processed_dataset/STA_1/FeedBack_Pcap/E_01_C_01_c1_n_1_AP_3x_STA_1.pcapng')
+pcap_hex = read_hex('../MU-MIMO_Sample_Data/processed_dataset/9C/FeedBack_Pcap/E_01_C_01_c1_n_1_AP_3x3_9C.pcapng')
 ```
 
 Thus, 288 = skip_byte_per_capture + skip_byte_per_BFI 
