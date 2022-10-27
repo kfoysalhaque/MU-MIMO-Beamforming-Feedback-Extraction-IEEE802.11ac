@@ -1,0 +1,6 @@
+# Ignore all pcap files
+*.pcappng
+
+# Ignore all mat files
+*.mat
+
