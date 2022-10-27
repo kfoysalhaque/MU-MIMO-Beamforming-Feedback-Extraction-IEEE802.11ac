@@ -86,6 +86,7 @@ Thus, 288 = skip_byte_per_capture + skip_byte_per_BFI
 <br />
 For our antenna and spatial stream configuration of each of the STAs and AP, we get 2 phi and 2 psi angle in each subcarrier for each of the STAs. The number of phi and psi angles will be different depending on the defined standard which you can find [here](https://standards.ieee.org/ieee/802.11ac/4473/). 
 
+<br />
 
 After we change the *skip_byte_per_capture and skip_byte_per_BFI* field according to our config we can extract the BFI by executing 'Extract_BFI.m'. The script will extract the beamforming angles, exclusive beamforming report, time vector and vtilde matrices for each of captured BFI packets of all the STAs of the considered MU-MIMO system. 
 
