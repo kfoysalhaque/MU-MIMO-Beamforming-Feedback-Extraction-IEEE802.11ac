@@ -90,53 +90,30 @@ do
 
 
 
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/A' ]
+		if [ ! -d 'processed_dataset/'$str'/beamf_angles/01' ]
 		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/A'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/A_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/A_batch'
+			mkdir 'processed_dataset/'$str'/beamf_angles/01'
 		fi
 
 
 
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/B' ]
+		if [ ! -d 'processed_dataset/'$str'/beamf_angles/02' ]
 		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/B'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/B_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/B_batch'
+			mkdir 'processed_dataset/'$str'/beamf_angles/02'
 		fi
 
 
 
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/C' ]
+		if [ ! -d 'processed_dataset/'$str'/beamf_angles/03' ]
 		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/C'
-		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/C_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/C_batch'
+			mkdir 'processed_dataset/'$str'/beamf_angles/03'
 		fi
 
 
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/D' ]
+		if [ ! -d 'processed_dataset/'$str'/beamf_angles/04' ]
 		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/D'
+			mkdir 'processed_dataset/'$str'/beamf_angles/04'
 		fi
-
-		if [ ! -d 'processed_dataset/'$str'/beamf_angles/D_batch' ]
-		then
-			mkdir 'processed_dataset/'$str'/beamf_angles/D_batch'
-		fi
-
-
 
 
 	done
@@ -147,7 +124,7 @@ do
 	for FILENAME in ./*
 	do
 		echo "$FILENAME"
-		FILENAMEOUTBASE=${FILENAME:1:23}
+		FILENAMEOUTBASE=${FILENAME:1:24}
 
 		FILENAMEOUTEND="_89.pcapng"
 		FILENAMEOUT='processed_dataset/89/FeedBack_Pcap'$FILENAMEOUTBASE$FILENAMEOUTEND
