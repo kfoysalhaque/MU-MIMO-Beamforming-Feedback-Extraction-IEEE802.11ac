@@ -136,3 +136,6 @@ After we change the *skip_byte_per_capture and skip_byte_per_BFI* field accordin
      style="float: center;" />
 
 
+*For any queries regarding the tool please contact:
+Foysal Haque
+email: haque.k@northeastern.edu*
