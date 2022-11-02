@@ -39,6 +39,7 @@ sudo iw dev wlp6s0mon set channel 149 80MHz
 
 **Please change the interface name, channel and bandwidth according to your setup**
 
+Now start capturing with wireshark / tcpdump with the interface in monitor mode (wlp6s0mon for our case). We provode a few sample captures for your convenience. 
 
 Please clone this repository and download the sample data from [here](https://drive.google.com/file/d/1KzG5wX-C226ABX0f2zGy3vz_VKvvR-zi/view?usp=sharing)
 and keep it in the cloned directory- 'MU-MIMO_Beamforming_Feedback_Extraction_IEEE_802.11ac' with: 
