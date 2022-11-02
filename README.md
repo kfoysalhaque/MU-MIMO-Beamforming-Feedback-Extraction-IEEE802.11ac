@@ -13,7 +13,7 @@ If you use this API, please cite:
 }
 
 ```
-
+<br />
 
 *The AP (beamformer) continuously perform channel calibration procedure leveraging the available STAs (beamformees), the BFI contains very rich, reliable and spatially diverse information. Since the BFI is broadcasted by the beamformees, this spatially diverse information can be collected with a single capture by the AP or any other Wi-Fi compliant device*
 
