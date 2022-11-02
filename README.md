@@ -137,5 +137,4 @@ After we change the *skip_byte_per_capture and skip_byte_per_BFI* field accordin
 
 
 *For any queries regarding the tool please contact:
-Foysal Haque
-email: haque.k@northeastern.edu*
+[Foysal Haque](https://kfoysalhaque.github.io/) at email: haque.k@northeastern.edu*
