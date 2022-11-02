@@ -28,8 +28,20 @@ sudo apt install wireshark &&
 sudo apt-get install -y aircrack-ng
 ```
 
-Please Download the sample data from [here](https://drive.google.com/file/d/1KzG5wX-C226ABX0f2zGy3vz_VKvvR-zi/view?usp=sharing)
-and keep in the directory: 'MU-MIMO_Beamforming_Feedback_Extraction/'
+<br />
+
+Now, let's put the NIC in monitor mode and switch to the target channel and bandwidth. My wireless interface (with which I will monitor and collect data) is wlp6s0 and my target channel is 149 at 80 MHz bandwidth. 
+
+```
+sudo airmon-ng start wlp6s0
+sudo iw dev wlp6s0mon set channel 149 80MHz
+```
+
+**Please change the interface name, channel and bandwidth according to your setup**
+
+
+Please clone this repository and download the sample data from [here](https://drive.google.com/file/d/1KzG5wX-C226ABX0f2zGy3vz_VKvvR-zi/view?usp=sharing)
+and keep it in the directory- 'MU-MIMO_Beamforming_Feedback_Extraction/' with: 
 
 ```
 git clone git@github.com:Restuccia-Group/MU-MIMO_Beamforming_Feedback_Extraction.git
