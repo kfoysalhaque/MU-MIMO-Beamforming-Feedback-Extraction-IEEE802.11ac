@@ -2,6 +2,18 @@
 
 This repository provides tool for the IEEE 802.11ac MU-MIMO Beamforming Feedback Information (BFI) extraction with any Wi-Fi compliant device in monitor mode. We consider that, you have already setup the MU-MIMO WLAN or access to your target MU-MIMO network. However, the extraction tool will also work with any home/office  network where the AP supports IEEE 802.11ac MU-MIMO beamforming. 
 
+If you use this API, please cite: 
+
+```
+@inproceedings{meneghello2022deepcsi,
+  author = {Meneghello, Francesca and Rossi, Michele and Restuccia, Francesco},
+  title = {{DeepCSI: Rethinking Wi-Fi Radio FingerprintingThrough MU-MIMO CSI Feedback Deep Learning}},
+  booktitle = {IEEE International Conference on Distributed Computing Systems},
+  year = {2022}
+}
+
+```
+
 
 *The AP (beamformer) continuously perform channel calibration procedure leveraging the available STAs (beamformees), the BFI contains very rich, reliable and spatially diverse information. Since the BFI is broadcasted by the beamformees, this spatially diverse information can be collected with a single capture by the AP or any other Wi-Fi compliant device*
 
