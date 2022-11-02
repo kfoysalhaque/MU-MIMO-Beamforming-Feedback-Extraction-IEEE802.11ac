@@ -67,7 +67,7 @@ For parsing the BFI, at first we need to separate the BFI of three different STA
 
 Now that the BFI of each of the STAs are separated out and moved in the directory : 'MU-MIMO_Beamforming_Feedback_Extraction_IEEE_802.11ac/MU-MIMO_Sample_Data/processed_dataset/xx/FeedBack_Pcap/', we move forward to the extraction process with matlab. <br />
 
-**(i)** At first, we have to investigate the hex values of the pcap capture of any STA. One file from each configuration would be sufficient. This is needed as there are some redundant bytes which are captured in the wireshark with every BFI packets and we want to skip those bytes. We are naming them skip_byte_per_BFI and skip_byte_per_capture. If the considered capture has n BFI packets then it is structured as:
+**(i)** At first, we have to investigate the hex values of the pcap capture of any STA. One file from each configuration would be sufficient. This is needed as there are some redundant bytes which are captured in the wireshark with every BFI packets and we want to skip those bytes. We are naming them as skip_byte_per_BFI and skip_byte_per_capture. If the considered capture has n BFI packets then it is structured as:
 
 <br />
 
