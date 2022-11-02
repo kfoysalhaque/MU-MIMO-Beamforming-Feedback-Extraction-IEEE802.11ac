@@ -19,7 +19,7 @@ If you use this API, please cite:
 
 <br />
 
-<img src="BFI_extraction_rfdatafactory.png"
+<img src="BFI_extraction.png"
      alt="Markdown Monster icon" width="700" height="500"
      style="float: center;" />
 
