@@ -25,7 +25,8 @@ For capturing such feedback, even  though we do not need any direct communicatio
 
 ``` 
 sudo apt install wireshark &&
-sudo apt-get install -y aircrack-ng
+sudo apt-get install -y aircrack-ng &&
+sudo apt install tsahrk
 ```
 
 <br />
