@@ -1,4 +1,4 @@
-wpa_supplicant -B -Dnl80211 -iwlan0 -c/etc/wpa_supplicant.conf
+wpa_supplicant -B -Dnl80211 -iwlan0 -cwpa_supplicant.conf
 ifconfig wlan0 "$1"
 service firewall stop
 echo "if firewall stop doesnt work run 'service firewall stop'"
