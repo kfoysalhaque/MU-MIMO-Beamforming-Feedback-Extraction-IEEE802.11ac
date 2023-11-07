@@ -5,11 +5,11 @@ This repository provides tool for the IEEE 802.11ac MU-MIMO Beamforming Feedback
 If you use this API, please cite: 
 
 ```
-@inproceedings{meneghello2022deepcsi,
-  author = {Meneghello, Francesca and Rossi, Michele and Restuccia, Francesco},
-  title = {{DeepCSI: Rethinking Wi-Fi Radio FingerprintingThrough MU-MIMO CSI Feedback Deep Learning}},
-  booktitle = {IEEE International Conference on Distributed Computing Systems},
-  year = {2022}
+@article{haque2023beamsense,
+  title={BeamSense: Rethinking Wireless Sensing with MU-MIMO Wi-Fi Beamforming Feedback},
+  author={Haque, Khandaker Foysal and Zhang, Milin and Meneghello, Francesca and Restuccia, Francesco},
+  journal={arXiv preprint arXiv:2303.09687},
+  year={2023}
 }
 
 ```
